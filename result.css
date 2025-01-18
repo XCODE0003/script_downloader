@@ -1,0 +1,197 @@
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.modal-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.btn.error {
+    background: #ff3636;
+    color: #fff;
+
+}
+.btn:hover {
+    background: rgb(226, 223, 254);
+}
+.btn {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 14px 0px;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    pointer-events: auto;
+    border: none;
+    outline-color: transparent;
+    outline-style: none;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: rgb(171, 159, 242);
+    color: rgb(34, 34, 34);
+}
+.modal-text {
+    color: rgb(153, 153, 153);
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    opacity: 1;
+    transition: opacity 0.1s ease;
+    text-decoration: none;
+    background-color: transparent;
+    max-width: 300px;
+}
+.select_wallet-container h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.select_wallet-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.wallet_item.selected {
+    background: rgb(191 4 82);
+}
+.wallet_item:hover {
+    border: 1px solid rgb(228 37 117);
+    color: #fff;
+}
+.wallet_item {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    justify-content: start;
+    font-weight: 600;
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 12px;
+    align-items: center;
+}
+.modal-content.active {
+    display: flex;
+}
+.modal-content {
+    width: 100%;
+    flex-direction: column;
+    max-width: 400px;
+    min-height: 480px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+    border: 1px solid rgb(50, 50, 50);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 20px;
+    border-radius: 16px;
+    padding: 20px;
+    position: relative;
+
+
+}
+.mt-4 {
+    margin-top: 1rem
+}
+.loader-big {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid rgb(255, 255, 255);
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+.loader-big::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-bottom: 4px solid white;
+    border-left: 4px solid transparent;
+}
+.pt-10 {
+    padding-top: 2.5rem
+}
+.pt-10 {
+    padding-top: 5rem
+}
+.seed_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 7rem);
+    gap: 10px;
+}
+.input_container input {
+    color: rgb(255, 255, 255);
+    background: none;
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: default;
+}
+.input_container.error {
+    border: 1px solid #ff3636;
+}
+.input_container p {
+    padding-left: 10px;
+    padding-right: 5px;
+    color: rgb(153, 153, 153);
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    opacity: 1;
+    font-size: 14px;
+    line-height: 25px;
+    text-decoration: none;
+    background-color: transparent;
+}
+.input_container {
+    color: rgb(255, 255, 255);
+    background: rgb(24, 24, 24);
+    border: 1px solid rgb(47, 47, 47);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 4px 0px;
+    align-self: center;
+    height: 41px;
+    transition: all 0.1s linear 0s;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
