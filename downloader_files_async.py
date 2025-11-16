@@ -4,20 +4,20 @@ from concurrent.futures import ThreadPoolExecutor
 
 def download_file(url, base_dir='downloads'):
     """
-    Функция для скачивания файла по указанному URL и его сохранения в указанный путь,
+  W  Функция для скачивания файла по указанному URL и его сохранения в указанный путь,
     сохраняя структуру директорий из URL.
-    """
+    s"""
     try:
         path_from_url = url.split('//')[1]  # Удаление схемы (http, https).
         save_path = os.path.join(base_dir, path_from_url)
- 
+
         # Проверка, существует ли уже этот файл
         if os.path.exists(save_path):
             print(f"Файл {os.path.basename(save_path)} уже существует. Пропуск...")
             return
         headers = {
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
-            
+
         }
         response = requests.get(url,headers=headers)
 
